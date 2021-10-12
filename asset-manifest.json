@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/diagnal-web/static/css/main.91ea9aaa.chunk.css",
+    "main.js": "/diagnal-web/static/js/main.5dab4492.chunk.js",
+    "main.js.map": "/diagnal-web/static/js/main.5dab4492.chunk.js.map",
+    "runtime-main.js": "/diagnal-web/static/js/runtime-main.e24ff93c.js",
+    "runtime-main.js.map": "/diagnal-web/static/js/runtime-main.e24ff93c.js.map",
+    "static/js/2.95dd230f.chunk.js": "/diagnal-web/static/js/2.95dd230f.chunk.js",
+    "static/js/2.95dd230f.chunk.js.map": "/diagnal-web/static/js/2.95dd230f.chunk.js.map",
+    "static/js/3.f0e1a8f6.chunk.js": "/diagnal-web/static/js/3.f0e1a8f6.chunk.js",
+    "static/js/3.f0e1a8f6.chunk.js.map": "/diagnal-web/static/js/3.f0e1a8f6.chunk.js.map",
+    "index.html": "/diagnal-web/index.html",
+    "static/css/main.91ea9aaa.chunk.css.map": "/diagnal-web/static/css/main.91ea9aaa.chunk.css.map",
+    "static/js/2.95dd230f.chunk.js.LICENSE.txt": "/diagnal-web/static/js/2.95dd230f.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e24ff93c.js",
+    "static/js/2.95dd230f.chunk.js",
+    "static/css/main.91ea9aaa.chunk.css",
+    "static/js/main.5dab4492.chunk.js"
+  ]
+}
