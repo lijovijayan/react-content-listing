@@ -1,0 +1,51 @@
+.home-container {
+  height: 100vh;
+  overflow: auto;
+  padding-top: 60px;
+  .movie-card {
+    background-color: #222222c7;
+    position: relative;
+    &:hover {
+      transition: all ease-in 350ms;
+      background-color: #353535;
+
+      .play-button {
+        opacity: 1;
+      }
+    }
+    border-radius: 4px;
+    img {
+      // border-radius: 4px;
+      object-fit: contain;
+    }
+    .play-button {
+      transition: all ease-in 450ms;
+      opacity: 0;
+      width: 30px;
+      height: 30px;
+      background-color: #ffe300;
+      border-radius: 30px;
+      position: absolute;
+      bottom: 30px;
+      right: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 2px 2px 3px 0px rgb(37, 37, 37);
+      cursor: pointer;
+      .play {
+        box-sizing: border-box;
+        height: 12px;
+
+        border-color: transparent transparent transparent #fff;
+        transition: 100ms all ease;
+        will-change: border-width;
+        cursor: pointer;
+
+        // play state
+        border-style: solid;
+        border-width: 6px 0 6px 8px;
+      }
+    }
+  }
+}

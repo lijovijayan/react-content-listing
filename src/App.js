@@ -1,24 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import { createStore, applyMiddleware } from 'redux'
+import thunkMiddleware from 'redux-thunk'
+import { composeWithDevTools } from 'redux-devtools-extension'
+import { Provider } from 'react-redux';
+
+import reducers from './store/reducers'
+import './styles/app.styles.scss';
+import { Home } from './containers/home';
+
+const composedEnhancer = composeWithDevTools(applyMiddleware(thunkMiddleware))
+const store = createStore(reducers, composedEnhancer)
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Provider store={store}>
+      <div className="app-container">
+        <Home />
+      </div>
+    </Provider>
   );
 }
 

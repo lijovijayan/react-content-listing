@@ -1,0 +1,33 @@
+.app-container {
+  text-align: center;
+}
+
+::-webkit-scrollbar {
+  width: 0; /* Remove scrollbar space */
+  background: transparent; /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+  background: #ffffff00;
+}
+
+.search-bar {
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0), #000);
+  width: 100%;
+  position: absolute;
+  height: 50px;
+  z-index: 1;
+  .search-icon {
+    width: 25px;
+    height: 25px;
+  }
+  .search-input {
+    height: 32px;
+    border: 1px solid #1f1f1f;
+    border-radius: 4px;
+    background-color: transparent;
+  }
+  &.show-search {
+    background-color: #000000b3;
+  }
+}
