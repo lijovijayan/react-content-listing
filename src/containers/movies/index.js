@@ -5,8 +5,9 @@ import { MoviesAction } from "../../store/actions";
 import '../../styles/home.styles.scss'
 
 export function Movies() {
-    const scrollRef = useRef(null);
     const dispatch = useDispatch();
+    const scrollRef = useRef(null);
+
     const { movies, page, pageSize, totalRecords, searchKey } = useSelector(state => state.movies)
     const haveNextPage = useMemo(() => page * pageSize < totalRecords, [page, pageSize, totalRecords]);
 
