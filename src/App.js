@@ -5,7 +5,7 @@ import { Provider } from 'react-redux';
 
 import reducers from './store/reducers'
 import './styles/app.styles.scss';
-import { Home } from './containers/home';
+import { Movies } from './containers/movies';
 
 const composedEnhancer = composeWithDevTools(applyMiddleware(thunkMiddleware))
 const store = createStore(reducers, composedEnhancer)
@@ -14,7 +14,7 @@ function App() {
   return (
     <Provider store={store}>
       <div className="app-container">
-        <Home />
+        <Movies />
       </div>
     </Provider>
   );
