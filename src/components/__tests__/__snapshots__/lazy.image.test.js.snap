@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`testing card rendered properly 1`] = `<Card />`;
+
+exports[`testing lazy image rendered properly 1`] = `
+<LazyImage
+  alt=""
+  className=""
+  src=""
+/>
+`;

@@ -3,7 +3,7 @@ import '../styles/lazy.image.styles.scss';
 
 const placeHolder = process.env.PUBLIC_URL + '/images/placeholder_for_missing_posters.png'
 
-export const LazyImage = ({ src, alt, className }) => {
+export const LazyImage = ({ src, alt, className = '' }) => {
   const [imageSrc, setImageSrc] = useState(placeHolder)
   const [imageRef, setImageRef] = useState()
   const observer = useRef()
