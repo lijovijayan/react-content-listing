@@ -9,7 +9,6 @@ export class MoviesAction {
     static fetchMovies(page) {
         return async (dispatch, getState) => {
             const { movies: { searchKey } } = getState();
-            console.log('on action');
             dispatch(ActionUtility.createAction(MoviesAction.SET_LOADER, true))
             MoviesEffect.fetchMovies(page, searchKey).then(data => {
                 dispatch(ActionUtility.createAction(MoviesAction.FETCH_MOVIES, data))
