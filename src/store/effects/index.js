@@ -1,1 +1,1 @@
-export * from './movies.effect';
+export * from './movies.effect'
