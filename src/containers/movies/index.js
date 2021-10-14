@@ -24,7 +24,7 @@ export function Movies() {
     function onScroll() {
         if (scrollRef.current) {
             const { scrollTop, scrollHeight, clientHeight } = scrollRef.current;
-            if (scrollTop + clientHeight >= scrollHeight - 250 && haveNextPage) {
+            if (scrollTop + clientHeight == scrollHeight && haveNextPage) {
                 dispatch(MoviesAction.fetchMovies(+page + 1))
             }
         }
