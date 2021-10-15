@@ -11,7 +11,7 @@ describe('testing movies module', () => {
                 <Movies />
             </StoreProvider>
         )
-        const tree = toJson(component)
-        expect(tree).toMatchSnapshot()
+        const componentTree = toJson(component)
+        expect(componentTree).toMatchSnapshot()
     })
 })
