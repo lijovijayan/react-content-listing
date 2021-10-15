@@ -1,3 +1,30 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`testing appbar rendered properly 1`] = `<AppBar />`;
+exports[`testing appbar rendered properly 1`] = `
+<div
+  className="search-bar flex flex-row items-center "
+>
+  <img
+    alt="search"
+    className="back-icon ml-3"
+    draggable={false}
+    src="/images/Back.png"
+  />
+  <div
+    className="flex-1 text-xl text-left flex flex-row justify-between items-center"
+  >
+    <span
+      className="pl-3 header-title"
+    >
+      Appbar Render Test
+    </span>
+  </div>
+  <img
+    alt="search"
+    className="search-icon mr-3"
+    draggable={false}
+    onClick={[Function]}
+    src="/images/search.png"
+  />
+</div>
+`;

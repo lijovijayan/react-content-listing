@@ -39,8 +39,10 @@ export function Movies() {
         }
     }
 
-    function onSearch(searchKey) {
-        dispatch(MoviesAction.searchMovies(searchKey))
+    function onSearch(_searchKey) {
+        if (_searchKey !== searchKey) {
+            dispatch(MoviesAction.searchMovies(_searchKey))
+        }
     }
 
     function renderList() {

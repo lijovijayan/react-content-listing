@@ -1,11 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`testing card rendered properly 1`] = `<Card />`;
-
 exports[`testing lazy image rendered properly 1`] = `
-<LazyImage
+<img
   alt=""
-  className=""
-  src=""
+  className=" lazy-image"
+  draggable={false}
+  onError={[Function]}
+  onLoad={[Function]}
+  src="/images/placeholder_for_missing_posters.png"
 />
 `;

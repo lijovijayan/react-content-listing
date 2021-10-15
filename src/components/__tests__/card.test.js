@@ -1,11 +1,12 @@
 import React from 'react'
-import { create } from 'react-test-renderer'
 import { shallow } from 'enzyme'
+import toJson from 'enzyme-to-json'
 import { Card } from '../card'
 
 describe('testing card', () => {
     it('rendered properly', () => {
-        const cardTree = shallow(<Card imageURL={''} name={''} />).toJSON()
-        expect(cardTree).toMatchSnapshot()
+        const component = shallow(<Card imageURL={''} name={''} />)
+        const tree = toJson(component)
+        expect(tree).toMatchSnapshot()
     })
 })
