@@ -1,21 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`testing whole application rendered properly 1`] = `
-<Provider
-  store={
-    Object {
-      "@@observable": [Function],
-      "dispatch": [Function],
-      "getState": [Function],
-      "replaceReducer": [Function],
-      "subscribe": [Function],
-    }
-  }
->
+<StoreProvider>
   <div
     className="app-container"
   >
     <Movies />
   </div>
-</Provider>
+</StoreProvider>
 `;

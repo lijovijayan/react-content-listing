@@ -5,10 +5,17 @@ import { AppBar } from '../appbar'
 
 describe('testing appbar', () => {
     it('rendered properly', () => {
-        const component = shallow(
-            <AppBar onChange={() => {}} title="Appbar Render Test" />
-        )
-        const appbarTree = toJson(component)
-        expect(appbarTree).toMatchSnapshot()
+        const appbar = <AppBar onChange={() => {}} title="Appbar Render Test" />
+        const componentWrapper = shallow(appbar)
+        let componentTree = toJson(componentWrapper)
+        expect(componentTree).toMatchSnapshot()
+
+        componentWrapper.find('#searchIcon').simulate('click')
+        componentTree = toJson(componentWrapper)
+        expect(componentTree).toMatchSnapshot()
+
+        componentWrapper.find('#searchIcon').simulate('click')
+        componentTree = toJson(componentWrapper)
+        expect(componentTree).toMatchSnapshot()
     })
 })

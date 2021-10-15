@@ -6,7 +6,7 @@ import { Card } from '../card'
 describe('testing card', () => {
     it('rendered properly', () => {
         const component = shallow(<Card imageURL={''} name={''} />)
-        const tree = toJson(component)
-        expect(tree).toMatchSnapshot()
+        const componentTree = toJson(component)
+        expect(componentTree).toMatchSnapshot()
     })
 })

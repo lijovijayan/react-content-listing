@@ -8,7 +8,7 @@ describe('testing lazy image', () => {
         const component = shallow(
             <LazyImage className={''} src={''} alt={''} />
         )
-        const tree = toJson(component)
-        expect(tree).toMatchSnapshot()
+        const componentTree = toJson(component)
+        expect(componentTree).toMatchSnapshot()
     })
 })

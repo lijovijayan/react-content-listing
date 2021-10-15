@@ -38,6 +38,7 @@ export function AppBar({ onChange, title }) {
                 )}
             </div>
             <img
+                id="searchIcon"
                 className={'search-icon mr-3'}
                 src={searchIcon}
                 alt={'search'}
