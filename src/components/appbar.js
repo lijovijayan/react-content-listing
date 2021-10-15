@@ -5,7 +5,7 @@ const backIcon = `${process.env.PUBLIC_URL}/images/Back.png`
 
 export function AppBar({ onChange, title }) {
     const [showSearch, showSearchInput] = useState(false)
-    const handler = useCallback(debounce(onChange, 400), [])
+    const handler = useCallback(debounce(onChange, 500), [])
 
     function onSwitchSearchIcon() {
         if (showSearch) {

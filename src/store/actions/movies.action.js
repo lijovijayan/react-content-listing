@@ -40,10 +40,14 @@ export class MoviesAction {
                 })
         }
     }
-    static searchMovies(searchKey) {
+    static searchMovies(_searchKey) {
         return async (dispatch, getState) => {
+            const {
+                movies: { searchKey }
+            } = getState()
+            if (_searchKey === searchKey) return
             dispatch(ActionUtility.createAction(MoviesAction.SET_LOADER, true))
-            MoviesEffect.fetchMovies(1, searchKey)
+            MoviesEffect.fetchMovies(1, _searchKey)
                 .then((data) => {
                     dispatch(
                         ActionUtility.createAction(
