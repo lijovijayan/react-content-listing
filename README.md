@@ -1,18 +1,13 @@
-# Diagnal Demo App
+# React Content Listing
 
 Content listing page [`live application`](https://lijovijayan.github.io/diagnal-web).
 
-Developed the mobile browser version of content listing page as per the design by using ReactJS with Redux for state
-management by following both `design and functional requiements`.
+Developed the mobile browser version of content listing page using  `ReactJS` with `Redux` for state
+management.
 
 ---
 
 ## Requirements
-
-### Design Requirements
-* App design must be as per the design given in the Designs section of this document.
-* Size/dimensions for the app are given in the ‘Redline’ section. Adapt this to mobile browser layout as necessary.
-* If something is not specified in the Redline, make a best estimate on placing and sizing based on the designs given in the Designs section.
 
 ### Functional Requirements
 * App must implement lazy loading of contents - image grid must load gradually as the user scrolls down. Data for the first page can be loaded during
