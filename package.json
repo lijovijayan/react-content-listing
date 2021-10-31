@@ -1,8 +1,7 @@
 {
     "name": "diagnal-web",
     "version": "0.1.0",
-    "private": true,
-    "homepage": "https://lijovijayan.github.io/diagnal-web",
+    "homepage": "https://lijovijayan.github.io/react-content-listing",
     "dependencies": {
         "enzyme-adapter-react-16": "^1.15.6",
         "enzyme-to-json": "^3.6.2",
